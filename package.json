@@ -1,0 +1,20 @@
+{
+  "name": "basic_calc_service",
+  "version": "0.1.0",
+  "bin": {
+    "basic_calc_service": "bin/basic_calc_service.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.108.1",
+    "aws-cdk": "1.108.1",
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.108.1"
+  }
+}
