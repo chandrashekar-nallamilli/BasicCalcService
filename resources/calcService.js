@@ -52,6 +52,7 @@ exports.main = async function (event, context) {
               numbers = arthemticRequest.divide.split(",");
               validateNumbers(numbers);
               if (numbers.length > 2) throw "Only two numbers for divide";
+              if(numbers[1] === '0') throw "Enter valid input, denominator cant be zero"
               body = {
                 result: numbers.reduce((a, b) => parseFloat(a) / parseFloat(b)),
               };
